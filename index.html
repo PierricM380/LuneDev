@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LuneDev</title>
     <!-- CSS files -->
-    <link rel="stylesheet" href="css/color-1.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-switcher.css" />
+    <link rel="stylesheet" href="css/color-1.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
     <link href="http://fonts.cdnfonts.com/css/noteworthy" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/color-1.css" class="alternate-style" title="color-1" disabled/>
+    <link rel="stylesheet" href="css/color-2.css" class="alternate-style" title="color-2" disabled/>
+    <link rel="stylesheet" href="css/color-3.css" class="alternate-style" title="color-3" disabled/>
+    <link rel="stylesheet" href="css/color-4.css" class="alternate-style" title="color-4" disabled/>
+    <link rel="stylesheet" href="css/color-5.css" class="alternate-style" title="color-5" disabled/>
   </head>
 
   <body>
@@ -31,30 +38,30 @@
         <!-- nav links -->
         <ul class="nav">
           <li>
-            <a href="#" class="active"
+            <a href="#home" class="active"
               ><i class="fa-solid fa-house"></i>Accueil</a
             >
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-user-tie"></i>À propos</a>
+            <a href="#about"><i class="fa-solid fa-user-tie"></i>À propos</a>
           </li>
           <li>
-            <a href="#"
+            <a href="#services"
               ><i class="fa-solid fa-briefcase"></i>Mes réalisations</a
             >
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-list"></i>Services</a>
+            <a href="#portfolio"><i class="fa-solid fa-list"></i>Services</a>
           </li>
           <li>
-            <a href="#"><i class="fa-regular fa-address-card"></i>Contact</a>
+            <a href="#contact"><i class="fa-regular fa-address-card"></i>Contact</a>
           </li>
         </ul>
       </div>
       <!-- Main Content -->
       <div class="main-content">
         <!-- HOME SECTION -->
-        <section class="home section">
+        <section class="home section" id="home">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
@@ -87,7 +94,7 @@
         </section>
 
         <!-- ABOUT SECTION -->
-        <section class="about section">
+        <section class="about section" id="about">
           <div class="container">
             <!-- Title -->
             <div class="row">
@@ -255,7 +262,7 @@
         </section>
 
         <!-- SERVICES SECTION -->
-        <section class="service section">
+        <section class="service section" id="services">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -310,7 +317,7 @@
         </section>
 
         <!-- PORFOLIO SECTION -->
-        <section class="portfolio section">
+        <section class="portfolio section" id="portfolio">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -344,7 +351,7 @@
         </section>
 
         <!-- CONTACT SECTION -->
-        <section class="contact section">
+        <section class="contact section" id="contact">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -433,7 +440,25 @@
       </div>
     </div>
 
+    <!-- SWITCHER PANEL -->
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fa-solid fa-gear fa-spin"></i>
+      </div>
+      <div class="day-night s-icon">
+        <i class="fa-solid"></i>
+      </div>
+      <h4>Thème</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
+    </div>
     <!-- JS files -->
     <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
   </body>
 </html>
