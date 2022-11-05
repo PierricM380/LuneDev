@@ -39,16 +39,40 @@ ul {
     list-style: none;
 }
 
-.main-content {
-    padding-left: 270px;
-}
-
 .section {
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
     padding: 0 30px;
     opacity: 1;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+}
+
+.section.back-section {
+    z-index: 1;
+}
+
+.section.active {
+    z-index: 2;
+    opacity: 1;
+    animation: slideSection 1s ease;
+}
+
+@keyframes slideSection {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .hidden {
@@ -127,6 +151,7 @@ ul {
     justify-content: center;
     align-items: center;
     z-index: 10;
+    transition: all 0.3s ease;
 }
 
 /* logo */
@@ -191,6 +216,7 @@ ul {
     display: none;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 
 .aside .nav-toggler span {
@@ -199,6 +225,10 @@ ul {
     background: var(--skin-color);
     display: inline-block;
     position: relative;
+}
+
+.aside .nav-toggler.open span {
+    background-color: transparent;
 }
 
 .aside .nav-toggler span::before {
@@ -211,6 +241,11 @@ ul {
     left: 0;
 }
 
+.aside .nav-toggler.open span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
 .aside .nav-toggler span::after {
     content: '';
     height: 2px;
@@ -219,6 +254,11 @@ ul {
     position: absolute;
     top: 6px;
     left: 0;
+}
+
+.aside .nav-toggler.open span::after {
+    transform: rotate(-45deg);
+    top: 0;
 }
 
 /* Menu links */
@@ -304,7 +344,7 @@ h3.my-profession {
 }
 
 .shadow-dark {
-    box-shadow: 0 0 20px var(--text-black-700);
+    box-shadow: 0 0 10px var(--text-black-700);
 }
 
 /* Side image */
@@ -339,8 +379,8 @@ h3.my-profession {
 
 .home .home-img img {
     margin: auto;
-    border-radius: 10px;
-    height: 400px;
+    border-radius: 15px;
+    height: 500px;
 }
 
 /* ABOUT SECTION */
@@ -402,8 +442,7 @@ h3.my-profession {
     margin-top: 30px;
 }
 
-.about .about-content .personal-info .btn {
-    margin-right: 15px;
+.about .about-content .personal-info .buttons .btn {
     margin-top: 10px;
 }
 
@@ -554,7 +593,7 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner:hover {
-    box-shadow: 0 0 20px var(--text-black-700);
+    box-shadow: 0 0 10px var(--text-black-700);
 }
 
 .service .service-item .service-item-inner .icon {
@@ -721,12 +760,33 @@ h3.my-profession {
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 1199px) {
+    .section .container {
+        padding-top: 70px;
+    }
+
     .aside {
         left: -270px;
     }
 
-    .main-content {
-        padding-left: 0;
+    .aside .nav-toggler {
+        display: flex;
+        left: 30px;
+    }
+
+    .aside .nav-toggler.open {
+        left: 300px;
+    }
+
+    .aside.open {
+        left: 0;
+    }
+
+    .section {
+        left: 0;
+    }
+
+    .section.open {
+        left: 270px;
     }
 
     .about .about-content .personal-info .info-item p span {
@@ -754,6 +814,7 @@ h3.my-profession {
 }
 
 @media (max-width: 767px) {
+
     .about .about-content .personal-info,
     .about .about-content .skills,
     .about .about-content .education,

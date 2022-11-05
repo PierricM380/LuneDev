@@ -76,12 +76,12 @@
             <a href="#about"><i class="fa-solid fa-user-tie"></i>À propos</a>
           </li>
           <li>
-            <a href="#services"
-              ><i class="fa-solid fa-briefcase"></i>Mes réalisations</a
+            <a href="#portfolio"
+              ><i class="fa-solid fa-briefcase"></i>Portfolio</a
             >
           </li>
           <li>
-            <a href="#portfolio"><i class="fa-solid fa-list"></i>Services</a>
+            <a href="#services"><i class="fa-solid fa-list"></i>Services</a>
           </li>
           <li>
             <a href="#contact"
@@ -93,7 +93,7 @@
       <!-- Main Content -->
       <div class="main-content">
         <!-- HOME SECTION -->
-        <section class="home section" id="home">
+        <section class="home active section" id="home">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
@@ -113,7 +113,7 @@
                   s'est aussi adapté à la bureautique informatique, sans que son
                   contenu n'en soit modifié.
                 </p>
-                <a href="#contact" class="btn hire-me">Me contacter</a>
+                <a href="#" class="btn" target="_blank">Télécharger mon CV</a>
               </div>
               <div class="home-img padd-15">
                 <img
@@ -173,12 +173,10 @@
                         <p>Freelance: <span>Possible</span></p>
                       </div>
                     </div>
-                    <!-- Download CV -->
+                    <!-- Contact page -->
                     <div class="row">
                       <div class="buttons padd-15">
-                        <a href="#" class="btn" target="_blank"
-                          >Télécharger mon CV</a
-                        >
+                        <a href="#contact" data-section-index="1" class="btn hire-me">Me contacter</a>
                       </div>
                     </div>
                   </div>
@@ -293,6 +291,40 @@
           </div>
         </section>
 
+        <!-- PORTFOLIO SECTION -->
+        <section class="portfolio section" id="portfolio">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Mes réalisations</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="portfolio-heading padd-15">
+                <h2>Mes projets</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!-- EasyRecipes web -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="Assets/images/easyRecipe.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- EasyRecipes iOS -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="Assets/images/RecetteFaciles.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- SERVICES SECTION -->
         <section class="service section" id="services">
           <div class="container">
@@ -342,40 +374,6 @@
                     adapté à la bureautique informatique, sans que son contenu
                     n'en soit modifié.
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- PORFOLIO SECTION -->
-        <section class="portfolio section" id="portfolio">
-          <div class="container">
-            <div class="row">
-              <div class="section-title padd-15">
-                <h2>Portfolio</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="portfolio-heading padd-15">
-                <h2>Mes projets</h2>
-              </div>
-            </div>
-            <div class="row">
-              <!-- EasyRecipes web -->
-              <div class="portfolio-item padd-15">
-                <div class="portfolio-item-inner shadow-dark">
-                  <div class="portfolio-img">
-                    <img src="Assets/images/easyRecipe.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <!-- EasyRecipes iOS -->
-              <div class="portfolio-item padd-15">
-                <div class="portfolio-item-inner shadow-dark">
-                  <div class="portfolio-img">
-                    <img src="Assets/images/RecetteFaciles.png" alt="" />
-                  </div>
                 </div>
               </div>
             </div>
