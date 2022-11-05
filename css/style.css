@@ -316,6 +316,7 @@ h3.my-profession {
 
 .typing {
     color: var(--skin-color);
+    font-family: noteworthy;
 }
 
 .home-info p {
@@ -344,7 +345,7 @@ h3.my-profession {
 }
 
 .shadow-dark {
-    box-shadow: 0 0 10px var(--text-black-700);
+    box-shadow: 0 0 5px var(--text-black-700);
 }
 
 /* Side image */
@@ -576,6 +577,15 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 
+.about .about-content .timeline a {
+    color: var(--text-black-700);
+}
+
+.about .about-content .timeline a:hover {
+    color: var(--skin-color);
+    text-decoration: underline;
+}
+
 /* SERVICES */
 .service .service-item {
     margin-bottom: 30px;
@@ -593,7 +603,7 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner:hover {
-    box-shadow: 0 0 10px var(--text-black-700);
+    box-shadow: 0 0 5px var(--text-black-700);
 }
 
 .service .service-item .service-item-inner .icon {
@@ -667,6 +677,7 @@ h3.my-profession {
 
 .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
+    border-radius: 10px;
 }
 
 /* CONTACT SECTION */
@@ -746,7 +757,7 @@ h3.my-profession {
 }
 
 .contact .contact-form .form-item .form-control:focus {
-    box-shadow: 0 0 10px rgba(80, 78, 112, 0.5);
+    box-shadow: 0 0 5px rgba(80, 78, 112, 0.5);
 }
 
 .contact .contact-form .form-item textarea.form-control {
@@ -756,6 +767,7 @@ h3.my-profession {
 .contact .contact-form .btn {
     height: 50px;
     padding: 0 50px;
+    cursor: pointer;
 }
 
 /* MOBILE RESPONSIVE */
@@ -771,6 +783,7 @@ h3.my-profession {
     .aside .nav-toggler {
         display: flex;
         left: 30px;
+        box-shadow: 0 0 2px var(--text-black-700);
     }
 
     .aside .nav-toggler.open {
