@@ -1,8 +1,8 @@
 /* Typing animation from library typed.js */
 var typed = new Typed(".typing", {
-    strings: ["sites web", "applications mobiles"],
+    strings: ["de sites web", "d'applications mobiles"],
     typeSpeed: 100,
-    backSpeed: 60,
+    backSpeed: 75,
     loop: true
 });
 
