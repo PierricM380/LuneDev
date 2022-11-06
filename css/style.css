@@ -157,44 +157,13 @@ ul {
 /* logo */
 .aside .logo {
     position: absolute;
-    top: 50px;
-    font-size: 30px;
-    text-transform: capitalize;
+    top: 5px;
 }
 
-.aside .logo a {
-    color: var(--text-black-700);
-    font-weight: 700;
-    padding: 15px 20px;
-    letter-spacing: 5px;
+.aside .logo img {
+    width: 175px;
+    height: auto;
     position: relative;
-}
-
-.aside .logo a::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-bottom: 5px solid var(--skin-color);
-    border-left: 5px solid var(--skin-color);
-    bottom: 0;
-    left: 0;
-}
-
-.aside .logo a::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-top: 5px solid var(--skin-color);
-    border-right: 5px solid var(--skin-color);
-    top: 0;
-    right: 0;
-}
-
-.aside .logo a span {
-    font-family: noteworthy;
-    font-size: 40px;
 }
 
 /* nav */
@@ -297,20 +266,20 @@ ul {
     max-width: 60%;
 }
 
-h3.hello {
-    font-size: 28px;
+h1.hello {
+    font-size: 30px;
     margin: 15px 0;
 }
 
-h3.hello span {
+h1.hello span {
     font-family: noteworthy;
     font-size: 30px;
     font-weight: 700;
     color: var(--skin-color);
 }
 
-h3.my-profession {
-    font-size: 30px;
+h2.my-profession {
+    font-size: 25px;
     margin: 15px 0;
 }
 
@@ -325,11 +294,18 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 
+.home .home-info .links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 /* Button */
 .btn {
     font-size: 16px;
     font-weight: 500;
-    padding: 12px 35px;
+    padding: 10px 25px;
+    margin-right: 15px;
     color: white;
     border-radius: 25px;
     display: inline-block;
@@ -356,32 +332,12 @@ h3.my-profession {
     position: relative;
 }
 
-.home-img::before {
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-top: 10px solid var(--skin-color);
-    border-left: 10px solid var(--skin-color);
-    left: -1px;
-    top: -40px;
-}
-
-.home-img::after {
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 10px solid var(--skin-color);
-    border-right: 10px solid var(--skin-color);
-    right: 1px;
-    bottom: -40px;
-}
-
 .home .home-img img {
     margin: auto;
+    border: 10px solid var(--skin-color);
     border-radius: 15px;
     height: 500px;
+    box-shadow: 0 0 5px var(--text-black-700);
 }
 
 /* ABOUT SECTION */
@@ -500,7 +456,7 @@ h3.my-profession {
     margin-top: 30px;
 }
 
-.about .about-content H3.title {
+.about .about-content h1.title {
     font-size: 24px;
     margin-bottom: 30px;
     font-weight: 700;
@@ -632,7 +588,7 @@ h3.my-profession {
     color: #ffff;
 }
 
-.service .service-item .service-item-inner h4 {
+.service .service-item .service-item-inner h3 {
     font-size: 18px;
     margin-bottom: 15px;
     color: var(--text-black-900);
@@ -711,7 +667,7 @@ h3.my-profession {
     color: var(--skin-color);
 }
 
-.contact .contact-info-item h4 {
+.contact .contact-info-item h3 {
     font-size: 18px;
     font-weight: 700;
     color: var(--text-black-900);
@@ -792,6 +748,10 @@ h3.my-profession {
 
     .aside.open {
         left: 0;
+    }
+
+    .aside .logo img {
+        width: 125px;
     }
 
     .section {

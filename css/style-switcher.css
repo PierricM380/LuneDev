@@ -1,6 +1,6 @@
 .style-switcher {
     position: fixed;
-    top: 10px;
+    top: 8px;
     right: 5px;
     padding: 15px;
     width: 200px;
@@ -13,7 +13,7 @@
 }
 
 .style-switcher.open {
-    transform: translateX(-25px);
+    transform: translateX(-30px);
 }
 
 .style-switcher .s-icon {
@@ -26,7 +26,7 @@
     color: var(--text-black-900);
     right: 100%;
     border: 1px solid var(--bg-black-50);
-    margin-right: 25px;
+    margin-right: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 50%;
@@ -44,7 +44,7 @@
     top: 55px;
 }
 
-.style-switcher h4 {
+.style-switcher h3 {
     margin: 0 0 10px;
     color: var(--text-black-700);
     font-size: 16px;
