@@ -257,7 +257,6 @@ ul {
 .home {
     min-height: 100vh;
     display: flex;
-    color: var(--text-black-900);
 }
 
 /* Block title */
@@ -269,6 +268,8 @@ ul {
 h1.hello {
     font-size: 30px;
     margin: 15px 0;
+
+    color: var(--text-black-900);
 }
 
 h1.hello span {
@@ -281,6 +282,7 @@ h1.hello span {
 h2.my-profession {
     font-size: 25px;
     margin: 15px 0;
+    color: var(--text-black-900);
 }
 
 .typing {
@@ -290,7 +292,7 @@ h2.my-profession {
 
 .home-info p {
     margin-bottom: 70px;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--text-black-700);
 }
 
@@ -307,7 +309,7 @@ h2.my-profession {
     padding: 10px 25px;
     margin-right: 15px;
     color: white;
-    border-radius: 25px;
+    border-radius: 10px;
     display: inline-block;
     white-space: nowrap;
     border: none;
@@ -346,19 +348,21 @@ h2.my-profession {
     max-width: 100%;
 }
 
+/* Introduction */
 .about .about-content .about-text {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
 .about .about-content .about-text h3 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 15px;
     font-weight: 700;
     color: var(--text-black-900);
 }
 
 .about .about-content .about-text h3 span {
+    font-size: 30px;
     color: var(--skin-color);
     font-family: noteworthy;
 }
@@ -369,6 +373,7 @@ h2.my-profession {
     color: var(--text-black-700);
 }
 
+/* Informations */
 .about .about-content .personal-info {
     flex: 0 0 60%;
     max-width: 60%;
@@ -403,6 +408,7 @@ h2.my-profession {
     margin-top: 10px;
 }
 
+/* skills */
 .about .about-content .skills {
     flex: 0 0 40%;
     max-width: 40%;
@@ -412,41 +418,47 @@ h2.my-profession {
 .about .about-content .skills .skill-item {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 25px;
 }
 
-.about .about-content .skills .skill-item h5 {
-    line-height: 40px;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--text-black-900);
-    text-transform: uppercase;
+.about .about-content .skills .skill-item i {
+    font-size: 3rem;
+    padding: 10px;
 }
 
-.about .about-content .skills .skill-item .progress {
-    background-color: var(--bg-black-50);
-    height: 7px;
-    border-radius: 4px;
-    width: 100%;
-    position: relative;
+.about .about-content .skills .skill-item i.fa-html5 {
+    color: #c36040 ;
 }
 
-.about .about-content .skills .skill-item .progress .progress-in {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    border-radius: 4px;
-    background-color: var(--skin-color);
+.about .about-content .skills .skill-item i.fa-css3-alt {
+    color: #386aa4;
 }
 
-.about .about-content .skills .skill-item .skill-percent {
-    position: absolute;
-    right: 0;
-    color: var(--text-black-900);
-    top: -30px;
-    font-weight: 400;
-    list-style: 40px;
+.about .about-content .skills .skill-item i.fa-bootstrap {
+    color: #6e17ed;
+}
+
+.about .about-content .skills .skill-item i.fa-js {
+    color: #f3e14f;
+}
+
+.about .about-content .skills .skill-item i.fa-wordpress {
+    color: #438ab9;
+}
+
+.about .about-content .skills .skill-item i.fa-php {
+    color: #797cb0;
+}
+
+.about .about-content .skills .skill-item i.fa-database {
+    color: #d3d3d3;
+}
+
+.about .about-content .skills .skill-item i.fa-docker {
+    color: #126884;
+}
+
+.about .about-content .skills .skill-item i.fa-swift {
+    color: #ed813d;
 }
 
 .about .about-content .education,
@@ -456,8 +468,8 @@ h2.my-profession {
     margin-top: 30px;
 }
 
-.about .about-content h1.title {
-    font-size: 24px;
+.about .about-content h4.title {
+    font-size: 25px;
     margin-bottom: 30px;
     font-weight: 700;
     color: var(--text-black-900);
@@ -529,7 +541,6 @@ h2.my-profession {
 .about .about-content .timeline .timeline-text {
     line-height: 25px;
     font-size: 16px;
-    text-align: justify;
     color: var(--text-black-700);
 }
 
