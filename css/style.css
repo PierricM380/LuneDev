@@ -618,17 +618,6 @@ h2.my-profession {
     padding-bottom: 40px;
 }
 
-.portfolio .portfolio-heading {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 40px;
-}
-
-.portfolio .portfolio-heading h2 {
-    color: var(--text-black-900);
-    font-weight: 500;
-}
-
 .portfolio .portfolio-item {
     flex: 0 0 33.33%;
     max-width: 33.33%;
@@ -636,15 +625,46 @@ h2.my-profession {
 }
 
 .portfolio .portfolio-item-inner {
-    border: 6px solid var(--bg-black-100);
+    box-shadow: 0 0 5px var(--text-black-700);
     border-radius: 10px;
     overflow: hidden;
-    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-item-inner:hover {
+    box-shadow: 0 0 15px var(--text-black-700);
+    transition: all 0.3s ease-in-out;
 }
 
 .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
-    border-radius: 10px;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img img:hover {
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-item-inner h3 {
+    font-size: 18px;
+    text-align: center;
+    font-family: noteworthy;
+    color: var(--skin-color);
+    padding-bottom: 15px;
+}
+
+.portfolio .portfolio-item-inner p {
+    font-size: 16px;
+    text-align: center;
+    color: var(--text-black-700);
+    padding-inline: 10px;
+    padding-bottom: 15px;
 }
 
 /* CONTACT SECTION */
