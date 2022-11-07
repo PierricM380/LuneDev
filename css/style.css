@@ -554,67 +554,6 @@ h2.my-profession {
     text-decoration: underline;
 }
 
-/* SERVICES */
-.service .service-item {
-    margin-bottom: 30px;
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-}
-
-.service .service-item .service-item-inner {
-    background-color: var(--bg-black-100);
-    border: 1px solid var(--bg-black-50);
-    border-radius: 10px;
-    padding: 30px 15px;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-}
-
-.service .service-item .service-item-inner:hover {
-    box-shadow: 0 0 5px var(--text-black-700);
-    transition: all 0.3s ease-in-out;
-}
-
-.service .service-item .service-item-inner .icon {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 30px;
-    text-align: center;
-}
-
-.service .service-item .service-item-inner:hover .icon {
-    background: var(--skin-color);
-    transition: all 0.3s ease;
-}
-
-.service .service-item .service-item-inner .icon i {
-    font-size: 40px;
-    line-height: 60px;
-    color: var(--skin-color);
-    transition: all 0.3s ease;
-}
-
-.service .service-item .service-item-inner:hover .icon i {
-    font-size: 25px;
-    color: #ffff;
-}
-
-.service .service-item .service-item-inner h3 {
-    font-size: 25px;
-    margin-bottom: 15px;
-    color: var(--text-black-900);
-    font-weight: 700;
-    text-transform: capitalize;
-}
-
-.service .service-item .service-item-inner p {
-    font-size: 16px;
-    line-height: 25px;
-    color: var(--text-black-700);
-}
-
 /* PORTFOLIO */
 .portfolio .container {
     padding-bottom: 40px;
@@ -871,7 +810,6 @@ h2.my-profession {
     .about .about-content .skills,
     .about .about-content .education,
     .about .about-content .experience,
-    .service .service-item,
     .portfolio .portfolio-item,
     .contact .contact-info-item,
     .contact .contact-form .col-6 {
