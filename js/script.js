@@ -63,6 +63,7 @@ function updateNav(element) {
     }
 }
 
+/** CONTACT LINK PAGE */
 document.querySelector(".hire-me").addEventListener("click", function () {
     const sectionIndex = this.getAttribute("data-section-index");
 
@@ -72,6 +73,7 @@ document.querySelector(".hire-me").addEventListener("click", function () {
     addBackSection(sectionIndex);
 })
 
+/** BUTTON MENU AT MOBILES SCREENS */
 const navTogglerBtn = document.querySelector(".nav-toggler"),
     aside = document.querySelector(".aside");
 navTogglerBtn.addEventListener("click", () => {
