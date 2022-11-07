@@ -1,405 +1,331 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LuneDev</title>
-    <!-- CSS files -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style-switcher.css" />
-    <link rel="stylesheet" href="css/color-1.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-    <link href="http://fonts.cdnfonts.com/css/noteworthy" rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="css/color-1.css"
-      class="alternate-style"
-      title="color-1"
-      disabled
-    />
-    <link
-      rel="stylesheet"
-      href="css/color-2.css"
-      class="alternate-style"
-      title="color-2"
-      disabled
-    />
-    <link
-      rel="stylesheet"
-      href="css/color-3.css"
-      class="alternate-style"
-      title="color-3"
-      disabled
-    />
-    <link
-      rel="stylesheet"
-      href="css/color-4.css"
-      class="alternate-style"
-      title="color-4"
-      disabled
-    />
-    <link
-      rel="stylesheet"
-      href="css/color-5.css"
-      class="alternate-style"
-      title="color-5"
-      disabled
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuneDev</title>
+  <!-- CSS files -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style-switcher.css" />
+  <link rel="stylesheet" href="css/color-1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link href="http://fonts.cdnfonts.com/css/noteworthy" rel="stylesheet" />
 
-  <body>
-    <!-- MAIN CONTAINER -->
-    <div class="main-container">
-      <!-- Aside -->
-      <aside class="aside">
-        <!-- Logo -->
-        <div class="logo">
-          <img src="Assets/images/logo.png" alt="logo LuneDev." />
-        </div>
-        <!-- nav toggler -->
-        <div class="nav-toggler">
-          <span></span>
-        </div>
-        <!-- nav links -->
-        <ul class="nav">
-          <li>
-            <a href="#home" class="active"
-              ><i class="fa-solid fa-house"></i>Accueil</a
-            >
-          </li>
-          <li>
-            <a href="#about"><i class="fa-solid fa-user-tie"></i>À propos</a>
-          </li>
-          <li>
-            <a href="#portfolio"
-              ><i class="fa-solid fa-briefcase"></i>Portfolio</a
-            >
-          </li>
-          <li>
-            <a href="#services"><i class="fa-solid fa-list"></i>Services</a>
-          </li>
-          <li>
-            <a href="#contact"
-              ><i class="fa-regular fa-address-card"></i>Contact</a
-            >
-          </li>
-        </ul>
-      </aside>
-      <!-- Main Content -->
-      <main class="main-content">
-        <!-- HOME SECTION -->
-        <section class="home active section" id="home">
-          <div class="container">
-            <div class="row">
-              <div class="home-info padd-15">
-                <h1 class="hello">
-                  Bonjour, mon nom est <span class="name">Pierric Marye</span>
-                </h1>
-                <h2 class="my-profession">
-                  Création <span class="typing"></span>
-                </h2>
-                <p>
-                  Fort de ma passion pour ce domaine et d'une expérience de 2
-                  ans, je suis très investi dans mon travail, où je prends grand
-                  plaisir à exercer; aussi cet engouement se reflète largement
-                  dans la qualité de mon travail.
-                  <br />
-                  Je peux développer des applications modernes et tendances
-                  ainsi qu'en assurer la maintenance.
-                  <br />
-                  Aujourd'hui je souhaite intégrer une entreprise dynamique,
-                  aussi je serai ravi de rejoindre votre équipe en tant que
-                  développeur. Je peux également vous proposer mes services en
-                  tant que Freelance.
-                </p>
-                <div class="links">
-                  <a
-                    href="Assets/datas/CV_Pierric.pdf"
-                    class="btn"
-                    target="_blank"
-                    title="Télécharger mon CV"
-                  >
-                    CV
-                  </a>
-                  <a
-                    href="https://github.com/PierricM380"
-                    class="btn"
-                    target="_blank"
-                    title="ma page Github"
-                  >
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/pierricmarye"
-                    class="btn"
-                    target="_blank"
-                    title="ma page LinkedIn"
-                  >
-                    <i class="fa-brands fa-linkedin"></i>
-                  </a>
-                </div>
+  <link rel="stylesheet" href="css/color-1.css" class="alternate-style" title="color-1" disabled />
+  <link rel="stylesheet" href="css/color-2.css" class="alternate-style" title="color-2" disabled />
+  <link rel="stylesheet" href="css/color-3.css" class="alternate-style" title="color-3" disabled />
+  <link rel="stylesheet" href="css/color-4.css" class="alternate-style" title="color-4" disabled />
+  <link rel="stylesheet" href="css/color-5.css" class="alternate-style" title="color-5" disabled />
+</head>
+
+<body>
+  <!-- MAIN CONTAINER -->
+  <div class="main-container">
+    <!-- Aside -->
+    <aside class="aside">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="Assets/images/logo.png" alt="logo LuneDev." />
+      </div>
+      <!-- nav toggler -->
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+      <!-- nav links -->
+      <ul class="nav">
+        <li>
+          <a href="#home" class="active"><i class="fa-solid fa-house"></i>Accueil</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa-solid fa-user-tie"></i>À propos</a>
+        </li>
+        <li>
+          <a href="#portfolio">
+            <i class="fa-solid fa-briefcase"></i>Portfolio
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <i class="fa-regular fa-address-card"></i>Contact
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- HOME SECTION -->
+      <section class="home active section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h1 class="hello">
+                Bonjour, mon nom est <span class="name">Pierric Marye</span>
+              </h1>
+              <h2 class="my-profession">
+                Création <span class="typing"></span>
+              </h2>
+              <p>
+                Fort de ma passion pour ce domaine et d'une expérience de 2
+                ans, je suis très investi dans mon travail, où je prends grand
+                plaisir à exercer; aussi cet engouement se reflète largement
+                dans la qualité de mon travail.
+                <br />
+                Je peux développer des applications modernes et tendances
+                ainsi qu'en assurer la maintenance.
+                <br />
+                Aujourd'hui je souhaite intégrer une entreprise dynamique,
+                aussi je serai ravi de rejoindre votre équipe en tant que
+                développeur. Je peux également vous proposer mes services en
+                tant que Freelance.
+              </p>
+              <div class="links">
+                <a href="Assets/datas/CV_Pierric.pdf" class="btn" target="_blank" title="Télécharger mon CV">
+                  CV
+                </a>
+                <a href="https://github.com/PierricM380" class="btn" target="_blank" title="ma page Github">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/pierricmarye" class="btn" target="_blank" title="ma page LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
               </div>
-              <div class="home-img padd-15">
-                <img
-                  src="Assets/images/profile.png"
-                  alt="ma photo de profile se trouve à droite de l'écran"
-                />
-              </div>
+            </div>
+            <div class="home-img padd-15">
+              <img src="Assets/images/profile.png" alt="ma photo de profile se trouve à droite de l'écran" />
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- ABOUT SECTION -->
-        <section class="about section" id="about">
-          <div class="container">
-            <!-- Title -->
-            <div class="row">
-              <div class="section-title padd-15">
-                <h2>À mon propos</h2>
-              </div>
+      <!-- ABOUT SECTION -->
+      <section class="about section" id="about">
+        <div class="container">
+          <!-- Title -->
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>À mon propos</h2>
             </div>
-            <div class="row">
-              <div class="about-content padd-15">
-                <!-- Introduction -->
-                <div class="row">
-                  <div class="about-text padd-15">
-                    <h3>
-                      Je suis
-                      <span>Développeur Web et Mobile iOS</span>
-                    </h3>
-                    <p>
-                      Passionné par la réalisation et le développement
-                      d'application web ainsi que mobile; j'ai donc suivi une
-                      formation de développeur full-stack et mobile iOS.
-                      <br />
-                      Minutieux, investi, persévérant, rigoureux et autodidacte
-                      sont mes principales qualités; je m'adapte également à
-                      toutes situations et dispose d'un bon relationnel.
-                      <br />
-                      Je suis très à l'aise avec le HTML, CSS, JavaScript et le
-                      framework Bootstrap. J'affectionnement également les
-                      langages backend comme PHP / Symfony et les bases de
-                      données MySQL. La conception de sites avec les CMS
-                      Wordpress ou Webflow font aussi partis de mes compétences.
-                      Je porte également un très fort intérêt pour le
-                      développement mobile iOS avec l'environnement Xcode et
-                      SwiftUI.
-                    </p>
-                  </div>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <!-- Introduction -->
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>
+                    Je suis
+                    <span>Développeur Web et Mobile iOS</span>
+                  </h3>
+                  <p>
+                    Passionné par la réalisation et le développement
+                    d'application web ainsi que mobile; j'ai donc suivi une
+                    formation de développeur full-stack et mobile iOS.
+                    <br />
+                    Minutieux, investi, persévérant, rigoureux et autodidacte
+                    sont mes principales qualités; je m'adapte également à
+                    toutes situations et dispose d'un bon relationnel.
+                    <br />
+                    Je suis très à l'aise avec le HTML, CSS, JavaScript et le
+                    framework Bootstrap. J'affectionnement également les
+                    langages backend comme PHP / Symfony et les bases de
+                    données MySQL. La conception de sites avec les CMS
+                    Wordpress ou Webflow font aussi partis de mes compétences.
+                    Je porte également un très fort intérêt pour le
+                    développement mobile iOS avec l'environnement Xcode et
+                    SwiftUI.
+                  </p>
                 </div>
-                <!-- Informations -->
-                <div class="row">
-                  <div class="personal-info padd-15">
-                    <div class="row">
-                      <div class="info-item padd-15">
-                        <p>Date de naissance: <span>10 Août 1983</span></p>
-                      </div>
-                      <div class="info-item padd-15">
-                        <p>Email: <span>pierric.marye380@gmail.com</span></p>
-                      </div>
-                      <div class="info-item padd-15">
-                        <p>Ville: <span>Perpignan</span></p>
-                      </div>
-                      <div class="info-item padd-15">
-                        <p>Freelance: <span>Possible</span></p>
-                      </div>
+              </div>
+              <!-- Informations -->
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>Date de naissance: <span>10 Août 1983</span></p>
                     </div>
-                    <!-- Contact page link -->
-                    <div class="row">
-                      <div class="buttons padd-15">
-                        <a
-                          href="#contact"
-                          data-section-index="1"
-                          class="btn hire-me"
-                          >Me contacter</a
-                        >
-                      </div>
+                    <div class="info-item padd-15">
+                      <p>Email: <span>pierric.marye380@gmail.com</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Ville: <span>Perpignan</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Freelance: <span>Possible</span></p>
                     </div>
                   </div>
-                  <!-- Skills section -->
-                  <div class="skills padd-15">
-                    <div class="row">
-                      <div class="skill-item padd-15">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-bootstrap"></i>
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-brands fa-wordpress"></i>
-                        <i class="fa-brands fa-php"></i>
-                        <i class="fa-brands fa-symfony"></i>
-                        <i class="fa-solid fa-database"></i>
-                        <i class="fa-brands fa-docker"></i>
-                        <i class="fa-brands fa-swift"></i>
-                      </div>
+                  <!-- Contact page link -->
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      <a href="#contact" data-section-index="1" class="btn hire-me">Me contacter</a>
                     </div>
                   </div>
                 </div>
-                <!-- Curses -->
-                <div class="row">
-                  <!-- Formations -->
-                  <div class="education padd-15">
-                    <h4 class="title">Formations</h4>
-                    <div class="row">
-                      <div class="timeline-box padd-15">
-                        <div class="timeline shadow-dark">
-                          <!-- Timeline -->
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h5 class="timeline-date">
-                              <i class="fa-regular fa-calendar"></i>Mai 2021 -
-                            </h5>
-                            <h6 class="timeline-title">
-                              Formation Développeur Web et Mobile iOS
-                            </h6>
-                            <p class="timeline-text">
-                              Apprentissage des langages frontend, backend et
-                              mobiles avec la plateforme
-                              <a href="https://www.studi.com/fr" target="_blank"
-                                >Studi</a
-                              >.
-                            </p>
-                          </div>
-                          <!-- Timeline -->
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h5 class="timeline-date">
-                              <i class="fa-regular fa-calendar"></i>Avril 2020 -
-                              Mai 2020
-                            </h5>
-                            <h6 class="timeline-title">
-                              Initiation aux langages de programmation
-                            </h6>
-                            <p class="timeline-text">
-                              Apprentissage en autodidacte du codage: Swift et
-                              HTML5/CSS3/JavaScript. Utilisation d’applications
-                              comme Swift playgrounds, Internet, vidéos et
-                              forums.
-                            </p>
-                          </div>
-                          <!-- Timeline -->
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h5 class="timeline-date">
-                              <i class="fa-regular fa-calendar"></i>Octobre 212
-                            </h5>
-                            <h6 class="timeline-title">CACES Catégorie 5</h6>
-                            <p class="timeline-text">
-                              Obtenu à E.LECLERC Perpignan
-                            </p>
-                          </div>
-                          <!-- Timeline -->
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h5 class="timeline-date">
-                              <i class="fa-regular fa-calendar"></i>2006 - 2010
-                            </h5>
-                            <h6 class="timeline-title">
-                              Formation bagage des oiseaux
-                              <a href="https://crbpo.mnhn.fr" target="_blank"
-                                >C.R.B.P.O</a
-                              >
-                            </h6>
-                            <p class="timeline-text">
-                              Initiation et perfectionnement à la capture et
-                              marquages des oiseaux à des fins de suivis des
-                              comportements des populations d’oiseaux.
-                            </p>
-                          </div>
+                <!-- Skills section -->
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skill-item padd-15">
+                      <i class="fa-brands fa-html5"></i>
+                      <i class="fa-brands fa-css3-alt"></i>
+                      <i class="fa-brands fa-bootstrap"></i>
+                      <i class="fa-brands fa-js"></i>
+                      <i class="fa-brands fa-wordpress"></i>
+                      <i class="fa-brands fa-php"></i>
+                      <i class="fa-brands fa-symfony"></i>
+                      <i class="fa-solid fa-database"></i>
+                      <i class="fa-brands fa-docker"></i>
+                      <i class="fa-brands fa-swift"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Curses -->
+              <div class="row">
+                <!-- Formations -->
+                <div class="education padd-15">
+                  <h4 class="title">Formations</h4>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- Timeline -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h5 class="timeline-date">
+                            <i class="fa-regular fa-calendar"></i>Mai 2021 -
+                          </h5>
+                          <h6 class="timeline-title">
+                            Formation Développeur Web et Mobile iOS
+                          </h6>
+                          <p class="timeline-text">
+                            Apprentissage des langages frontend, backend et
+                            mobiles avec la plateforme
+                            <a href="https://www.studi.com/fr" target="_blank">Studi</a>.
+                          </p>
+                        </div>
+                        <!-- Timeline -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h5 class="timeline-date">
+                            <i class="fa-regular fa-calendar"></i>Avril 2020 -
+                            Mai 2020
+                          </h5>
+                          <h6 class="timeline-title">
+                            Initiation aux langages de programmation
+                          </h6>
+                          <p class="timeline-text">
+                            Apprentissage en autodidacte du codage: Swift et
+                            HTML5/CSS3/JavaScript. Utilisation d’applications
+                            comme Swift playgrounds, Internet, vidéos et
+                            forums.
+                          </p>
+                        </div>
+                        <!-- Timeline -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h5 class="timeline-date">
+                            <i class="fa-regular fa-calendar"></i>Octobre 212
+                          </h5>
+                          <h6 class="timeline-title">CACES Catégorie 5</h6>
+                          <p class="timeline-text">
+                            Obtenu à E.LECLERC Perpignan
+                          </p>
+                        </div>
+                        <!-- Timeline -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h5 class="timeline-date">
+                            <i class="fa-regular fa-calendar"></i>2006 - 2010
+                          </h5>
+                          <h6 class="timeline-title">
+                            Formation bagage des oiseaux
+                            <a href="https://crbpo.mnhn.fr" target="_blank">C.R.B.P.O</a>
+                          </h6>
+                          <p class="timeline-text">
+                            Initiation et perfectionnement à la capture et
+                            marquages des oiseaux à des fins de suivis des
+                            comportements des populations d’oiseaux.
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- Expériences -->
-                  <div class="experience padd-15">
-                    <h4 class="title">Expériences</h4>
-                    <div class="row">
-                      <div class="timeline-box padd-15">
-                        <div class="timeline shadow-dark">
-                          <!-- Timeline -->
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h5 class="timeline-date">
-                              <i class="fa-regular fa-calendar"></i>Mai 2021 -
-                            </h5>
-                            <h6 class="timeline-title">Studi formation</h6>
-                            <p class="timeline-text">
-                              Réalisation de projets de mise en situation afin
-                              de valider les compétences acquises selon le titre
-                              de développeur web et web mobile.
-                            </p>
-                          </div>
-                          <!-- Timeline -->
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h5 class="timeline-date">
-                              <i class="fa-regular fa-calendar"></i>Mai 2017 -
-                              Avril 2021
-                            </h5>
-                            <h6 class="timeline-title">
-                              <a href="https://www.rentacar.fr" target="_blank"
-                                >RENTACAR</a
-                              >
-                              Perpignan - Agent de location
-                            </h6>
-                            <p class="timeline-text">
-                              Agent de comptoir, accueil clientèle, propositions
-                              de devis, établissement de contrats, états des
-                              lieux départs/retours, préparateur de véhicules,
-                              suivis de flotte, dépannage informatique, gestions
-                              des litiges.
-                            </p>
-                          </div>
-                          <!-- Timeline -->
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h5 class="timeline-date">
-                              <i class="fa-regular fa-calendar"></i>Novembre
-                              2011 - Avril 2017
-                            </h5>
-                            <h6 class="timeline-title">
-                              Centre Commercial
-                              <a
-                                href="https://www.e.leclerc/mag/e-leclerc-espace-polygone"
-                                target="_blank"
-                                >E.LECLERC</a
-                              >
-                              Perpignan Nord - Employé commercial
-                            </h6>
-                            <p class="timeline-text">
-                              Service après-vente: réception client pour des
-                              articles défectueux, procédures de garantie
-                              produits, commandes, dépannage informatique.
-                              Vendeur multimédia: conseils, facturations,
-                              commandes. Service location de véhicules: Agent de
-                              comptoir, accueil clientèle, propositions de
-                              devis, établissement de contrats, états des lieux
-                              départs/retours, préparateur de véhicules, suivis
-                              de flotte, dépannage informatique, gestions des
-                              litiges.
-                            </p>
-                          </div>
-                          <!-- Timeline -->
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h5 class="timeline-date">
-                              <i class="fa-regular fa-calendar"></i>2003 - 2011
-                            </h5>
-                            <h6 class="timeline-title">Divers emplois</h6>
-                            <p class="timeline-text">
-                              Service voirie et espaces verts à la mairie de
-                              <a href="https://www.canetenroussillon.fr"
-                                >Canet-en-Roussillon</a
-                              >. Aide soigneur à la
-                              <a href="https://www.reserveafricainesigean.fr"
-                                >Réserve Africaine de Sigean</a
-                              >. Vendeur animalier à Jardiland.
-                            </p>
-                          </div>
+                </div>
+                <!-- Expériences -->
+                <div class="experience padd-15">
+                  <h4 class="title">Expériences</h4>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- Timeline -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h5 class="timeline-date">
+                            <i class="fa-regular fa-calendar"></i>Mai 2021 -
+                          </h5>
+                          <h6 class="timeline-title">Studi formation</h6>
+                          <p class="timeline-text">
+                            Réalisation de projets de mise en situation afin
+                            de valider les compétences acquises selon le titre
+                            de développeur web et web mobile.
+                          </p>
+                        </div>
+                        <!-- Timeline -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h5 class="timeline-date">
+                            <i class="fa-regular fa-calendar"></i>Mai 2017 -
+                            Avril 2021
+                          </h5>
+                          <h6 class="timeline-title">
+                            <a href="https://www.rentacar.fr" target="_blank">RENTACAR</a>
+                            Perpignan - Agent de location
+                          </h6>
+                          <p class="timeline-text">
+                            Agent de comptoir, accueil clientèle, propositions
+                            de devis, établissement de contrats, états des
+                            lieux départs/retours, préparateur de véhicules,
+                            suivis de flotte, dépannage informatique, gestions
+                            des litiges.
+                          </p>
+                        </div>
+                        <!-- Timeline -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h5 class="timeline-date">
+                            <i class="fa-regular fa-calendar"></i>Novembre
+                            2011 - Avril 2017
+                          </h5>
+                          <h6 class="timeline-title">
+                            Centre Commercial
+                            <a href="https://www.e.leclerc/mag/e-leclerc-espace-polygone" target="_blank">E.LECLERC</a>
+                            Perpignan Nord - Employé commercial
+                          </h6>
+                          <p class="timeline-text">
+                            Service après-vente: réception client pour des
+                            articles défectueux, procédures de garantie
+                            produits, commandes, dépannage informatique.
+                            Vendeur multimédia: conseils, facturations,
+                            commandes. Service location de véhicules: Agent de
+                            comptoir, accueil clientèle, propositions de
+                            devis, établissement de contrats, états des lieux
+                            départs/retours, préparateur de véhicules, suivis
+                            de flotte, dépannage informatique, gestions des
+                            litiges.
+                          </p>
+                        </div>
+                        <!-- Timeline -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h5 class="timeline-date">
+                            <i class="fa-regular fa-calendar"></i>2003 - 2011
+                          </h5>
+                          <h6 class="timeline-title">Divers emplois</h6>
+                          <p class="timeline-text">
+                            Service voirie et espaces verts à la mairie de
+                            <a href="https://www.canetenroussillon.fr">Canet-en-Roussillon</a>. Aide soigneur à la
+                            <a href="https://www.reserveafricainesigean.fr">Réserve Africaine de Sigean</a>. Vendeur
+                            animalier à Jardiland.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -408,336 +334,216 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- PORTFOLIO SECTION -->
-        <section class="portfolio section" id="portfolio">
-          <div class="container">
-            <div class="row">
-              <div class="section-title padd-15">
-                <h2>Mes réalisations</h2>
+      <!-- PORTFOLIO SECTION -->
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Mes réalisations</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- EasyRecipes web -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-img">
+                  <a href="https://lesrecettesfacilesdegigi.netlify.app/" title="Visiter le site" target="_blank">
+                    <img src="Assets/images/easyRecipe.png" alt="site Web de recettes de cuisine" />
+                  </a>
+                </div>
+                <h3>Les recettes Faciles de Gigi</h3>
+                <p>De la cuisine rapide et facile</p>
               </div>
             </div>
-            <div class="row">
-              <!-- EasyRecipes web -->
-              <div class="portfolio-item padd-15">
-                <div class="portfolio-item-inner">
-                  <div class="portfolio-img">
-                    <a
-                      href="https://lesrecettesfacilesdegigi.netlify.app/"
-                      title="Visiter le site"
-                      target="_blank"
-                    >
-                      <img
-                        src="Assets/images/easyRecipe.png"
-                        alt="site Web de recettes de cuisine"
-                      />
-                    </a>
-                  </div>
-                  <h3>Les recettes Faciles de Gigi</h3>
-                  <p>De la cuisine rapide et facile</p>
+            <!-- EasyRecipes iOS -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-img">
+                  <a href="https://www.linkedin.com/posts/pierricmarye_nouvel-interface-design-de-lapplication-activity-6947909629980913664-Zo0o?utm_source=share&utm_medium=member_desktop"
+                    title="Visiter le site" target="_blank">
+                    <img src="Assets/images/RecetteFaciles.png" alt="Application iOS de recettes de cuisine" />
+                  </a>
                 </div>
+                <h3>Recettes Faciles de Gigi</h3>
+                <p>Adaptation mobile du site</p>
               </div>
-              <!-- EasyRecipes iOS -->
-              <div class="portfolio-item padd-15">
-                <div class="portfolio-item-inner">
-                  <div class="portfolio-img">
-                    <a
-                      href="https://www.linkedin.com/posts/pierricmarye_nouvel-interface-design-de-lapplication-activity-6947909629980913664-Zo0o?utm_source=share&utm_medium=member_desktop"
-                      title="Visiter le site"
-                      target="_blank"
-                    >
-                      <img
-                        src="Assets/images/RecetteFaciles.png"
-                        alt="Application iOS de recettes de cuisine"
-                      />
-                    </a>
-                  </div>
-                  <h3>Recettes Faciles de Gigi</h3>
-                  <p>Adaptation mobile du site</p>
+            </div>
+            <!-- Yoanna resume -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-img">
+                  <a href="https://yoanna-riccio-marye-secretaire-medicale.netlify.app/" title="Visiter le site"
+                    target="_blank">
+                    <img src="Assets/images/yoannaResume.png" alt="CV en ligne de Yoanna Marye" />
+                  </a>
                 </div>
+                <h3>Yoanna Marye - CV</h3>
+                <p>Secrétaire médicale</p>
               </div>
-              <!-- Yoanna resume -->
-              <div class="portfolio-item padd-15">
-                <div class="portfolio-item-inner">
-                  <div class="portfolio-img">
-                    <a
-                      href="https://yoanna-riccio-marye-secretaire-medicale.netlify.app/"
-                      title="Visiter le site"
-                      target="_blank"
-                    >
-                      <img
-                        src="Assets/images/yoannaResume.png"
-                        alt="CV en ligne de Yoanna Marye"
-                      />
-                    </a>
-                  </div>
-                  <h3>Yoanna Marye - CV</h3>
-                  <p>Secrétaire médicale</p>
+            </div>
+            <!-- ExAileVoyage -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-img">
+                  <a href="https://exailevoyage.go.yj.fr/" title="Visiter le site" target="_blank">
+                    <img src="Assets/images/ExAileVoyage.png" alt="Page d'accueil du site" />
+                  </a>
                 </div>
+                <h3>Ex'Aile Voyage</h3>
+                <p>Site vitrine d'une agence de voyage</p>
               </div>
-              <!-- ExAileVoyage -->
-              <div class="portfolio-item padd-15">
-                <div class="portfolio-item-inner">
-                  <div class="portfolio-img">
-                    <a
-                      href="https://exailevoyage.go.yj.fr/"
-                      title="Visiter le site"
-                      target="_blank"
-                    >
-                      <img
-                        src="Assets/images/ExAileVoyage.png"
-                        alt="Page d'accueil du site"
-                      />
-                    </a>
-                  </div>
-                  <h3>Ex'Aile Voyage</h3>
-                  <p>Site vitrine d'une agence de voyage</p>
+            </div>
+            <!-- The hundred dice -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-img">
+                  <a href="https://the-hundred-dice-game.netlify.app/" title="Visiter le site" target="_blank">
+                    <img src="Assets/images/theHundredDice.png" alt="dés sur un plateau de jeu" />
+                  </a>
                 </div>
+                <h3>The hundred dice</h3>
+                <p>Le premier qui arrive à 100</p>
               </div>
-              <!-- The hundred dice -->
-              <div class="portfolio-item padd-15">
-                <div class="portfolio-item-inner">
-                  <div class="portfolio-img">
-                    <a
-                      href="https://the-hundred-dice-game.netlify.app/"
-                      title="Visiter le site"
-                      target="_blank"
-                    >
-                      <img
-                        src="Assets/images/theHundredDice.png"
-                        alt="dés sur un plateau de jeu"
-                      />
-                    </a>
-                  </div>
-                  <h3>The hundred dice</h3>
-                  <p>Le premier qui arrive à 100</p>
+            </div>
+            <!-- TouComptage -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-img">
+                  <a href="https://apps.apple.com/fr/app/toucomptage/id1623214396?l=fr" title="Visiter le site"
+                    target="_blank">
+                    <img src="Assets/images/TouComptage.png"
+                      alt="plaquette de présentation d'une application de comptage" />
+                  </a>
                 </div>
+                <h3>TouComptage</h3>
+                <p>Application iOS de comptage</p>
               </div>
-              <!-- TouComptage -->
-              <div class="portfolio-item padd-15">
-                <div class="portfolio-item-inner">
-                  <div class="portfolio-img">
-                    <a
-                      href="https://apps.apple.com/fr/app/toucomptage/id1623214396?l=fr"
-                      title="Visiter le site"
-                      target="_blank"
-                    >
-                      <img
-                        src="Assets/images/TouComptage.png"
-                        alt="plaquette de présentation d'une application de comptage"
-                      />
-                    </a>
-                  </div>
-                  <h3>TouComptage</h3>
-                  <p>Application iOS de comptage</p>
+            </div>
+            <!-- MP Meteo iOS -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-img">
+                  <a href="https://www.linkedin.com/posts/pierricmarye_my-second-ios-work-there-are-still-improvements-activity-6899788320721702912-wt2W?utm_source=share&utm_medium=member_desktop"
+                    title="Visiter le site" target="_blank">
+                    <img src="Assets/images/MPMeteo.png"
+                      alt="Image de l'application iOS météo. Lien vers la présentation vidéo" />
+                  </a>
                 </div>
-              </div>
-              <!-- MP Meteo iOS -->
-              <div class="portfolio-item padd-15">
-                <div class="portfolio-item-inner">
-                  <div class="portfolio-img">
-                    <a
-                      href="https://www.linkedin.com/posts/pierricmarye_my-second-ios-work-there-are-still-improvements-activity-6899788320721702912-wt2W?utm_source=share&utm_medium=member_desktop"
-                      title="Visiter le site"
-                      target="_blank"
-                    >
-                      <img
-                        src="Assets/images/MPMeteo.png"
-                        alt="Image de l'application iOS météo. Lien vers la présentation vidéo"
-                      />
-                    </a>
-                  </div>
-                  <h3>MP Météo</h3>
-                  <p>Application météo</p>
-                </div>
+                <h3>MP Météo</h3>
+                <p>Application météo</p>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- SERVICES SECTION -->
-        <section class="service section" id="services">
-          <div class="container">
-            <div class="row">
-              <div class="section-title padd-15">
-                <h2>Services</h2>
+      <!-- CONTACT SECTION -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Me contacter</h2>
+            </div>
+          </div>
+          <h3 class="contact-title padd-15">Besoin d'un renseignement ?</h3>
+          <h4 class="contact-sub-title padd-15">Je suis à votre service</h4>
+          <div class="row">
+            <!-- Email -->
+            <div class="contact-info-item padd-15">
+              <div class="icon">
+                <i class="fa-solid fa-at"></i>
+                <h5>Email:</h5>
+                <p>pierric.marye@gmail.com</p>
               </div>
             </div>
-            <div class="row">
-              <!-- Service item 1 -->
-              <div class="service-item padd-15">
-                <div class="service-item-inner">
-                  <div class="icon">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                  </div>
-                  <h3>Applications Mobiles</h3>
-                  <p>
-                    Il n'a pas fait que survivre cinq siècles, mais s'est aussi
-                    adapté à la bureautique informatique, sans que son contenu
-                    n'en soit modifié.
-                  </p>
-                </div>
-              </div>
-              <!-- Service item 2 -->
-              <div class="service-item padd-15">
-                <div class="service-item-inner">
-                  <div class="icon">
-                    <i class="fa-solid fa-laptop-code"></i>
-                  </div>
-                  <h3>Sites Web responsives</h3>
-                  <p>
-                    Il n'a pas fait que survivre cinq siècles, mais s'est aussi
-                    adapté à la bureautique informatique, sans que son contenu
-                    n'en soit modifié.
-                  </p>
-                </div>
-              </div>
-              <!-- Service item 3 -->
-              <div class="service-item padd-15">
-                <div class="service-item-inner">
-                  <div class="icon">
-                    <i class="fa-solid fa-palette"></i>
-                  </div>
-                  <h3>Design</h3>
-                  <p>
-                    Il n'a pas fait que survivre cinq siècles, mais s'est aussi
-                    adapté à la bureautique informatique, sans que son contenu
-                    n'en soit modifié.
-                  </p>
-                </div>
+            <!-- Localisation -->
+            <div class="contact-info-item padd-15">
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <h5>bureau</h5>
+                <p>Pia (66380)</p>
               </div>
             </div>
           </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section class="contact section" id="contact">
-          <div class="container">
-            <div class="row">
-              <div class="section-title padd-15">
-                <h2>Me contacter</h2>
-              </div>
-            </div>
-            <h3 class="contact-title padd-15">Besoin d'un renseignement ?</h3>
-            <h4 class="contact-sub-title padd-15">Je suis à votre service</h4>
-            <div class="row">
-              <!-- Email -->
-              <div class="contact-info-item padd-15">
-                <div class="icon">
-                  <i class="fa-solid fa-at"></i>
-                  <h5>Email:</h5>
-                  <p>pierric.marye@gmail.com</p>
+          <h2 class="contact-title padd-15">Laissez moi un message</h2>
+          <h3 class="contact-sub-title padd-15">
+            Je vous répondrais rapidement
+          </h3>
+          <!-- Contact form -->
+          <div class="row">
+            <form class="contact-form padd-15" method="post">
+              <div class="row">
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <!-- Fullname -->
+                    <input type="text" class="form-control" placeholder="Nom et Prénom" id="name" autocomplete="off"
+                      required />
+                  </div>
                 </div>
-              </div>
-              <!-- Localisation -->
-              <div class="contact-info-item padd-15">
-                <div class="icon">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <h5>bureau</h5>
-                  <p>Pia (66380)</p>
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <!-- Email -->
+                    <input type="email" class="form-control" placeholder="Votre email" id="email" autocomplete="off"
+                      required />
+                  </div>
                 </div>
               </div>
-            </div>
-            <h2 class="contact-title padd-15">Laissez moi un message</h2>
-            <h3 class="contact-sub-title padd-15">
-              Je vous répondrais rapidement
-            </h3>
-            <!-- Contact form -->
-            <div class="row">
-              <form class="contact-form padd-15" method="post">
-                <div class="row">
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <!-- Fullname -->
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Nom et Prénom"
-                        id="name"
-                        autocomplete="off"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <!-- Email -->
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder="Votre email"
-                        id="email"
-                        autocomplete="off"
-                        required
-                      />
-                    </div>
+              <div class="row">
+                <div class="form-item col-11 padd-15">
+                  <div class="form-group">
+                    <!-- Subject -->
+                    <input type="text" class="form-control" placeholder="Sujet" id="subject" autocomplete="off"
+                      required />
                   </div>
                 </div>
-                <div class="row">
-                  <div class="form-item col-11 padd-15">
-                    <div class="form-group">
-                      <!-- Subject -->
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Sujet"
-                        id="subject"
-                        autocomplete="off"
-                        required
-                      />
-                    </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-11 padd-15">
+                  <div class="form-group">
+                    <!-- Message -->
+                    <textarea id="message" class="form-control" placeholder="Tappez votre message ici"
+                      required></textarea>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="form-item col-11 padd-15">
-                    <div class="form-group">
-                      <!-- Message -->
-                      <textarea
-                        id="message"
-                        class="form-control"
-                        placeholder="Tappez votre message ici"
-                        required
-                      ></textarea>
-                    </div>
-                  </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-11 padd-15">
+                  <!-- Send button -->
+                  <button type="submit" class="btn" id="btn">Envoyer</button>
                 </div>
-                <div class="row">
-                  <div class="form-item col-11 padd-15">
-                    <!-- Send button -->
-                    <button type="submit" class="btn" id="btn">Envoyer</button>
-                  </div>
-                </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- SWITCHER PANEL -->
+  <div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+      <i class="fa-solid fa-gear fa-spin"></i>
     </div>
-
-    <!-- SWITCHER PANEL -->
-    <div class="style-switcher">
-      <div class="style-switcher-toggler s-icon">
-        <i class="fa-solid fa-gear fa-spin"></i>
-      </div>
-      <div class="day-night s-icon">
-        <i class="fa-solid"></i>
-      </div>
-      <h3>Thème</h3>
-      <div class="colors">
-        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-      </div>
+    <div class="day-night s-icon">
+      <i class="fa-solid"></i>
     </div>
-    <!-- JS files -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="js/script.js"></script>
-    <script src="js/style-switcher.js"></script>
-  </body>
+    <h3>Thème</h3>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
+  <!-- JS files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+  <script src="js/style-switcher.js"></script>
+</body>
+
 </html>
