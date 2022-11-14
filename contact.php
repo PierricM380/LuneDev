@@ -22,8 +22,8 @@ $mail->Host = "smtp.gmail.com";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
-$mail->Username = "pierric.marye380@gmail.com";
-$mail->Password = "rdfcvbmdvwkxzgxl";
+$mail->Username = "lunedev66@gmail.com";
+$mail->Password = "kpmcqppeeqssqkdc";
 
 
 $mail->addAddress("pierric.marye380@gmail.com", "LuneDev");
