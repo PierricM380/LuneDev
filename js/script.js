@@ -6,6 +6,14 @@ var typed = new Typed(".typing", {
     loop: true
 });
 
+// animJS animation
+AOS.init({
+	easing: 'linear',
+	duration: 2000,
+    offset: 500
+})
+
+
 /** Navigation */
 const nav = document.querySelector(".nav"),
     navList = document.querySelectorAll("li"),
