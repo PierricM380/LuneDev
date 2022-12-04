@@ -138,6 +138,10 @@ ul {
     position: relative;
 }
 
+em {
+    font-style: normal;
+}
+
 /* ASIDE */
 .aside {
     width: 270px;
@@ -269,20 +273,19 @@ ul {
 h1.hello {
     font-size: 30px;
     margin: 15px 0;
-
     color: var(--text-black-900);
 }
 
 h1.hello span {
     font-family: noteworthy;
     font-size: 30px;
-    font-weight: 700;
     color: var(--skin-color);
 }
 
 h2.my-profession {
     font-size: 25px;
     margin: 15px 0;
+    font-weight: 500;
     color: var(--text-black-900);
 }
 
@@ -354,7 +357,7 @@ h2.my-profession {
 .about .about-content .about-text h3 {
     font-size: 30px;
     margin-bottom: 15px;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--text-black-900);
 }
 
