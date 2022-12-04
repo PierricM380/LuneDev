@@ -357,14 +357,9 @@ h2.my-profession {
 .about .about-content .about-text h3 {
     font-size: 30px;
     margin-bottom: 15px;
-    font-weight: 500;
-    color: var(--text-black-900);
-}
-
-.about .about-content .about-text h3 span {
-    font-size: 30px;
     color: var(--skin-color);
     font-family: noteworthy;
+    font-weight: 500;
 }
 
 .about .about-content .about-text p {
@@ -749,9 +744,9 @@ h2.my-profession {
         font-size: 30px;
     }
 
-    .home .home-info .links {
-        display: flex;
-        justify-content: center;
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 
     h1.hello,
@@ -762,17 +757,25 @@ h2.my-profession {
         font-size: 20px;
     }
 
+    .home .home-info .links {
+        display: flex;
+        justify-content: center;
+    }
+
     h2.my-profession {
         font-size: 20px;
     }
 
-    .home .home-info {
-        flex: 0 0 100%;
-        max-width: 100%;
+    .home .home-info p {
+        text-align: justify;
     }
 
     .home .home-img {
         display: none;
+    }
+
+    .about .about-content .about-text p {
+        text-align: justify;
     }
 
     .about .about-content .personal-info .row:nth-child(2) {
