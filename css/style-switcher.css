@@ -1,7 +1,7 @@
 .style-switcher {
     position: fixed;
-    top: 5px;
-    right: 1px;
+    top: 15px;
+    right: 5px;
     padding: 15px;
     width: 200px;
     border: 1px solid var(--bg-black-50);
@@ -84,4 +84,10 @@
 
 .style-switcher .color-5 {
     background: #f021b2;
+}
+
+@media (max-width: 991px) {
+    .style-switcher {
+        top: 65px;
+    }
 }
