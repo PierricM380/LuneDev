@@ -357,8 +357,11 @@ h2.my-profession {
 .about .about-content .about-text h3 {
     font-size: 30px;
     margin-bottom: 15px;
-    color: var(--skin-color);
     font-family: noteworthy;
+    color: var(--skin-color);
+}
+
+.about .about-content .about-text h3>strong {
     font-weight: 500;
 }
 
