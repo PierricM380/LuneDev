@@ -258,6 +258,16 @@ em {
     margin-right: 15px;
 }
 
+.aside .footer {
+    position: absolute;
+    bottom: 35px;
+    left: 58px;
+}
+
+.aside .footer .copyright {
+    color: var(--text-black-900);
+}
+
 /* HOME SECTION */
 .home {
     min-height: 100vh;
@@ -728,6 +738,10 @@ h2.my-profession {
         width: 125px;
     }
 
+    .aside .footer {
+        left: 60px;
+    }
+
     .section {
         left: 0;
     }
@@ -745,6 +759,11 @@ h2.my-profession {
 @media (max-width: 991px) {
     .section-title h2 {
         font-size: 30px;
+    }
+
+    .aside .footer {
+        left: 65px;
+        bottom: 15px;
     }
 
     .home .home-info {
