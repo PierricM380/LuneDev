@@ -22,11 +22,11 @@ $mail->Host = "smtp.gmail.com";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
-$mail->Username = "lunedev66@gmail.com";
-$mail->Password = "kpmcqppeeqssqkdc";
+$mail->Username = "example@example.fr"; // replace by your email
+$mail->Password = "uniqueGooglePassword"; // Genereted into your google account platform
 
 
-$mail->addAddress("pierric.marye380@gmail.com", "LuneDev");
+$mail->addAddress("example@example.fr", "Pseudo"); // replace by your email and a pseudo
 $mail->setFrom($email, $name);
 
 $mail->isHTML(true); 
@@ -35,4 +35,4 @@ $mail->Body = $message;
 
 $mail->send();
 
-header("Location: index.html#contact");
+header("Location: index.html#contact"); // After sending, redirect to ...
